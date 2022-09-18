@@ -1,5 +1,4 @@
 #!/bin/bash
-# Author Brokedba https://twitter.com/BrokeDba
 read -p "Enter the VCN name you wish to create [CLI-VCN]: " vcn_name
 vcn_name=${vcn_name:-CLI-VCN}
 echo selected VCN name : $vcn_name
