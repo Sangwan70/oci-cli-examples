@@ -1,5 +1,4 @@
 #!/bin/bash
-# Author Brokedba https://twitter.com/BrokeDba
 while true; do
  oci network vcn list -c $C --output table --query "data[*].{CIDR:\"cidr-block\", VCN_NAME:\"display-name\", DOMAIN_NAME:\"vcn-domain-name\", DNS:\"dns-label\"}"
  read -p "select the VCN you wish to attach your subnet to [$vcn_name]: " vcn_name
